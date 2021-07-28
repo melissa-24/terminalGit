@@ -12,9 +12,10 @@ pwd = present working directory
 
 ### MAC:
 https://medium.com/fuzzy-code/show-current-git-branch-in-terminal-macos-e319e88046a6
+https://superuser.com/questions/193513/how-can-i-change-the-startup-directory-of-my-terminal-on-os-x
 
-### Both:
-https://medium.com/fuzzy-code/show-current-git-branch-in-terminal-macos-e319e88046a6
+### Windows:
+https://simplernerd.com/cli-git-bash-default/
 
 ## Git
 Commands:
@@ -36,4 +37,6 @@ orange M = that file has been modified
 green circle = something in that folder is new and is not being tracked
 green U = that file has been added and is not being tracked
 A = means that you have done git add for said file but have not commited yet
+
+
 Repo https://github.com/WF-InstructorMelissa/mergeConflict
