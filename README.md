@@ -23,7 +23,7 @@ git add = stage listed files/folders to be added to the commit or save point
 git commit -m "" = create save point and leave a relevant message
 git push = move save point up to the git service
 git clone = bring a repository down to local device
-git status = what files or folders have been changed and need to be commited
+git status = what files or folders have been changed and need to be comited
 git pull = update local repository with new changes that are on the git service
 git checkout -b = Create a branch with the name you give it
 git checkout = changes to the branch you list
@@ -39,4 +39,6 @@ green U = that file has been added and is not being tracked
 A = means that you have done git add for said file but have not committed yet
 
 
-Repo https://github.com/WF-InstructorMelissa/mergeConflict
+
+Cloning down new repo use this format
+https://<your token here>@github.com/<user or organization name>/<repository name>.git
