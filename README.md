@@ -42,3 +42,5 @@ A = means that you have done git add for said file but have not committed yet
 
 Cloning down new repo use this format
 https://<your token here>@github.com/<user or organization name>/<repository name>.git
+
+Just adding some content
