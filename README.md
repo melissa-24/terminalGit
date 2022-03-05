@@ -38,7 +38,10 @@ green circle = something in that folder is new and is not being tracked
 green U = that file has been added and is not being tracked
 A = means that you have done git add for said file but have not committed yet
 
-
+creating errors
 
 Cloning down new repo use this format
 https://<your token here>@github.com/<user or organization name>/<repository name>.git
+
+Just adding some content
+
