@@ -4,32 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/components/header.js"></script>
+    <script src="./js/components/footer.js"></script>
     <title>Terminal / Git / Github</title>
 </head>
 <body>
     <header>
         <h1>Terminal / Git / Github</h1>
-        <nav>
-            <a href="./index.html">Terminal / Git / Github</a>
-            <a href="./collab.html">Open Source and Collaboration</a>
-            <a href="./resources.html">Some Resources</a>
-            <a href='https://github.com/cyanharlow/purecss-lace' target="_blank">Link to HTML/CSS Picture git hub</a>
-            <a href='https://css-mountain-picture.netlify.app/' target="_blank">My crapy version of a HTML/CSS picture</a>
-            <a href='https://dojo24.github.io/homePage/' target="_blank">Good purposeful project that has all my daily links</a>
-            <a href='https://hackmd.io/uv_lg3AdTvymhf5hf4tGQg?view' target='_blank'>HackMd Notes</a>
-        </nav>
+        <nav-component></nav-component>
     </header>
     <main>
-        <img src="./images/terminal01.PNG" alt="Terminal">
-        <img src="./images/terminal02.PNG" alt="Terminal">
-        <img src="./images/terminal03.PNG" alt="Terminal">
-        <img src="./images/terminal04.PNG" alt="Terminal">
-        <img src="./images/terminal05.PNG" alt="Terminal">
-        <img src="./images/terminal06.PNG" alt="Terminal">
-        <img src="./images/image (5).png" alt="Git">
-        <img src="./images/git-basic-commands.png" alt="Git">
-        <img src="./images/1_PHuNOhupnXwBWWUtYuieag.jpeg" alt="Git">
+        <h2>Click images or arrows to view more</h2>
+        <div class="slideShow">
+            <img src="./images/gitAndGithub/slideShowTitle01.png" alt="Title Slide" onclick="openMainModal();currentMainSlide(1)">
+
+            <div id="myMainModal" class="modal">
+                <span class="close cursor" onclick="closeMainModal()">&times;</span>
+
+                <div class="modalContent">
+
+                    <button class="prev" onclick="plusMainSlides(-1)">&#10094;</button>
+
+                    <div class="mainSlides">
+                        <span class="numberText">1/10</span>
+                        <img src="./images/gitAndGithub/slideShowTitle01.png" alt="Title Slide" >
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">2/10</span>
+                        <img src="./images/gitAndGithub/whyGit.png" alt="Why Git" >
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">3/10</span>
+                        <img src="./images/gitAndGithub/whatIs01.webp" alt="What is Git" >
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">4/10</span>
+                        <img src="./images/gitAndGithub/whatIs02.png" alt="What is Git" >
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">5/10</span>
+                        <img src="./images/gitAndGithub/whatIs03.png" alt="What is Git" >
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">6/10</span>
+                        <img src="./images/gitAndGithub/gitBenefits.png" alt="Benefits" >
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">7/10</span>
+                        <img src="./images/gitAndGithub/gitLesson02.jpeg" alt="Benefits" >
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">8/10</span>
+                        <h2 class="img">Github isn't the only platform that uses Git</h2>
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">9/10</span>
+                        <img src="./images/gitAndGithub/hubVsLab.jpeg" alt="Github vs GitLab" >
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">10/10</span>
+                        <img src="./images/gitAndGithub/gitRepo.jpeg" alt="Repo" >
+                    </div>
+
+                    <button class="next" onclick="plusMainSlides(1)">&#10095;</button>
+
+                    <div class="row">
+                        <span class="column">
+                            <img src="./images/gitAndGithub/slideShowTitle01.png" alt="What is Git and Github?" onclick="currentMainSlide(1)" class="main">
+                        </span>
+                        <span class="column">
+                            <img src="./images/gitAndGithub/whyGit.png" alt="Why use git?" onclick="currentMainSlide(2)" class="main">
+                        </span>
+                        <span class="column">
+                            <img src="./images/gitAndGithub/whatIs01.webp" alt="" onclick="curentMainSlide(3)" class="main">
+                        </span>
+                        <span class="column">
+                            <img src="./images/gitAndGithub/whatIs02.png" alt="" onclick="currentMainSlide(4)" class="main">
+                        </span>
+                        <span class="column">
+                            <img src="./images/gitAndGithub/whatIs03.png" alt="" onclick="currenMainSlide(5)" class="main">
+                        </span>
+                        <span class="column">
+                            <img src="./images/gitAndGithub/gitBenefits.png" alt="" onclick="currenMainSlide(6)" class="main">
+                        </span>
+                        <span class="column">
+                            <img src="./images/gitAndGithub/gitLesson02.jpeg" alt="" onclick="currenMainSlide(7)" class="main">
+                        </span>
+                        <span class="column">
+                            <h2 onclick="currenMainSlide(8)" class="main">Github isn't the only platform that uses Git</h2>
+                        </span>
+                        <span class="column">
+                            <img src="./images/gitAndGithub/hubVsLab.jpeg" alt="" onclick="currenMainSlide(9)" class="main">
+                        </span>
+                        <span class="column">
+                            <img src="./images/gitAndGithub/gitRepo.jpeg" alt="" onclick="currenMainSlide(10)" class="main">
+                        </span>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="slideShow">
+            <button class="left" onclick="plusAltDivs(-1)">&#10094;</button>
+
+            <div class="altSlides img">
+                <img src="./images/slideShowTitle01.png" alt="Title Slide">
+            </div>
+            <div class="altSlides img">
+                <h3>You can find repositories like this - <a href='https://github.com/cyanharlow/purecss-lace' target="_blank">Pure HTML/CSS</a></h3>
+            </div>
+            <div class="altSlides img">
+                <iframe src="https://diana-adrianne.com/purecss-lace/" frameborder="0" height="800px" width="800px"></iframe>
+            </div>
+            <div class="altSlides img">
+                <h3>And attempt to recreate them like this - <a href="https://github.com/beedev-services/mountain-picture">Crapy Mountain</a></h3>
+            </div>
+            <div class="altSlides img">
+                <iframe src="https://css-mountain-picture.netlify.app/" frameborder="0" height="800px" width="800px"></iframe>
+            </div>
+            
+            <button class="right" onclick="plusAltDivs(1)">&#10095;</button>
+        </div>
     </main>
+    <footer-component></footer-component>
+    <script src="./js/script.js"></script>
 </body>
 </html>

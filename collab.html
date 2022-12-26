@@ -4,38 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/components/header.js"></script>
+    <script src="./js/components/footer.js"></script>
     <title>Open Source and Collaboration</title>
 </head>
 <body>
     <header>
         <h1>Collaboration and Open Source</h1>
-        <nav>
-            <a href="./index.html">Terminal / Git / Github</a>
-            <a href="./collab.html">Open Source and Collaboration</a>
-            <a href="./resources.html">Some Resources</a>
-            <a href='https://github.com/cyanharlow/purecss-lace' target="_blank">Link to HTML/CSS Picture git hub</a>
-            <a href='https://css-mountain-picture.netlify.app/' target="_blank">My crapy version of a HTML/CSS picture</a>
-            <a href='https://dojo24.github.io/homePage/' target="_blank">Good purposeful project that has all my daily links</a>
-            <a href='https://hackmd.io/uv_lg3AdTvymhf5hf4tGQg?view' target='_blank'>HackMd Notes</a>
-        </nav>
+        <nav-component></nav-component>
     </header>
     <main>
-        <h2>Why?</h2>
-        <img src="./images/collab.png" alt="Collaberation">
-        <h2>How?</h2>
-        <a href="https://thecodingtrain.com/" target="_blank">The Coding Train</a>
-        <a href="https://hacktoberfest.digitalocean.com/" target="_blank">Hacktoberfest</a>
-        <h2>The Process</h2>
-        <img src="./images/cloneVsBranch.png" alt="Clone Vs Branch">
-        <img src="./images/gitBranch.png" alt="Git Branch">
-        <img src="./images/gitflow.png" alt="Git Flow">
-        <img src="./images/sharedRepo.png" alt="Shared Repo">
-        <img src="./images/gitflow02.jpeg" alt="Git Flow">
-        <img src="./images/pullRequestFlow.png" alt="Pull Request">
-        <img src="./images/pullRequestFlow02.png" alt="Pull Request">
-        <h2>Whats next?</h2>
-        <img src="./images/githubPages.jpeg" alt="Git Hub Pages">
+        <h2>Click images or arrows to view more</h2>
+        <div class="slideShow">
+            <img src="./images/groups/slideShowTitle01.png" onclick="openMainModal(); currentMainSlide(1)" alt="">
+
+            <div id="myMainModal" class="modal">
+                <span class="close cursor" onclick="closeMainModal()">&times;</span>
+
+                <div class="modalContent">
+                    <button class="prev" onclick="plusMainSlides(-1)">&#10094;</button>
+
+                    <div class="mainSlides">
+                        <span class="numberText">1/9</span>
+                        <img src="./images/groups/slideShowTitle01.png" alt="">
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">2/9</span>
+                        <img src="./images/groups/cloneVsBranch.png" alt="">
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">3/9</span>
+                        <img src="./images/groups/collab.png" alt="">
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">4/9</span>
+                        <img src="./images/groups/sharedRepo.png" alt="">
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">5/9</span>
+                        <img src="./images/groups/pullRequestFlow.png" alt="">
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">6/9</span>
+                        <img src="./images/groups/pullRequestFlow02.png" alt="">
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">7/9</span>
+                        <img src="./images/branching/gitBranch.png" alt="">
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">8/9</span>
+                        <img src="./images/branching/gitflow02.jpeg" alt="">
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">9/9</span>
+                        <img src="./images/branching/gitflow03.png" alt="">
+                    </div>
+
+                    <button class="next" onclick="plusMainSlides(1)">&#10095;</button>
+
+                    <div class="row">
+                        <span class="column">
+                            <img src="./images/groups/slideShowTitle01.png" alt="" onclick="currentMainSlide(1)" class="main">
+                        </span>
+                        <span class="column">
+                            <img src="./images/groups/cloneVsBranch.png" onclick="currentMainSlide(2)" alt="" class="main">
+                        </span>
+                        <span class="column">
+                            <img src="./images/groups/collab.png" onclick="currentMainSlide(3)" alt="" class="main">
+                        </span>
+                        <span class="column">
+                            <img src="./images/groups/sharedRepo.png" onclick="currentMainSlide(4)" alt="" class="main">
+                        </span>
+                        <span class="column">
+                            <img src="./images/groups/pullRequestFlow.png" onclick="currentMainSlide(5)" alt="" class="main">
+                        </span>
+                        <span class="column">
+                            <img src="./images/groups/pullRequestFlow02.png" onclick="currentMainSlide(6)" alt="" class="main">
+                        </span>
+                        <span class="column">
+                            <img src="./images/branching/gitBranch.png" onclick="currentMainSlide(7)" alt="" class="main">
+                        </span>
+                        <span class="column">
+                            <img src="./images/branching/gitflow02.jpeg" onclick="currentMainSlide(8)" alt="" class="main">
+                        </span>
+                        <span class="column">
+                            <img src="./images/branching/gitflow03.png" onclick="currentMainSlide(9)" alt="" class="main">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    <footer-component></footer-component>
+    <script src="./js/script.js"></script>
 </body>
 </html>

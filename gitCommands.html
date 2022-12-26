@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/components/header.js"></script>
+    <script src="./js/components/footer.js"></script>
+    <title>The Basics - Git Commands</title>
+</head>
+<body>
+    <header>
+        <h1>The Basics - Git Commands</h1>
+        <nav-component></nav-component>
+    </header>
+    <main>
+        <h2>Click images or arrows to view more</h2>
+        <div class="slideShow">
+            <img src="./images/flowCommands/slideShowTitle01.png" alt="Title Slide" onclick="openMainModal(); currentMainSlide(1)">
+        
+            <div id="myMainModal" class="modal">
+                <span class="close cursor" onclick="closeMainModal()">&times;</span>
+        
+                <div class="modalContent">
+                    <button class="prev" onclick="plusMainSlides(-1)">&#10094;</button>
+        
+                    <div class="mainSlides">
+                        <span class="numberText">1/9</span>
+                        <img src="./images/flowCommands/slideShowTitle01.png" alt="Title slide">
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">2/9</span>
+                        <img src="./images/flowCommands/commandFlow01.png" alt="">
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">3/9</span>
+                        <img src="./images/flowCommands/commandFlow02.png" alt="">
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">4/9</span>
+                        <img src="./images/flowCommands/commands01.jpeg" alt="">
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">5/9</span>
+                        <img src="./images/flowCommands/commands02.webp" alt="">
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">6/9</span>
+                        <img src="./images/flowCommands/commands03.png" alt="">
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">7/9</span>
+                        <h2 class="img">Create your Repositories first - Following these steps (see note on image if you have done git init 1st)</h2>
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">8/9</span>
+                        <img src="./images/init/CreateRepo.png" alt="">
+                    </div>
+                    <div class="mainSlides">
+                        <span class="numberText">9/9</span>
+                        <img src="./images/init/ImportantInformation.png" alt="">
+                    </div>
+        
+                    <button class="next" onclick="plusMainSlides(1)">&#10095;</button>
+        
+                    <div class="row">
+                        <span class="column">
+                            <img src="./images/flowCommands/slideShowTitle01.png" alt="" class="main" onclick="currentMainSlide(1)">
+                        </span>
+                        <span class="column">
+                            <img src="./images/flowCommands/commandFlow01.png" alt="" class="main" onclick="currentMainSlide(2)">
+                        </span>
+                        <span class="column">
+                            <img src="./images/flowCommands/commandFlow02.png" alt="" class="main" onclick="currentMainSlide(3)">
+                        </span>
+                        <span class="column">
+                            <img src="./images/flowCommands/commands01.jpeg" alt="" class="main" onclick="currentMainSlide(4)">
+                        </span>
+                        <span class="column">
+                            <img src="./images/flowCommands/commands02.webp" alt="" class="main" onclick="currentMainSlide(5)">
+                        </span>
+                        <span class="column">
+                            <img src="./images/flowCommands/commands03.png" alt="" class="main" onclick="currentMainSlide(6)">
+                        </span>
+                        <span class="column">
+                            <h2 class="main" onclick="currentMainSlide(7)">Create your Repositories first - Following these steps (see note on image if you have done git init 1st)</h2>
+                        </span>
+                        <span class="column">
+                            <img src="./images/init/CreateRepo.png" alt="" onclick="currentMainSlide(8)" class="main">
+                        </span>
+                        <span class="column">
+                            <img src="./images/init/ImportantInformation.png" alt="" onclick="currentMainSlide(9)" class="main">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer-component></footer-component>
+    <script src="./js/script.js"></script>
+</body>
+</html>
