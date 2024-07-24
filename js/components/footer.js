@@ -6,7 +6,7 @@ class Footer extends HTMLElement {
         this.innerHTML = `
             <footer>
                 <h3>Created and Maintained by Melissa Longenberger</h3>
-                <a href="https://github.com/CodingDojo-ONL-PT-versionControl/terminalGit"> Source Code</a>
+                <a href="https://github.com/melissa-24/terminalGit"> Source Code</a>
             </footer>
         `
     }
